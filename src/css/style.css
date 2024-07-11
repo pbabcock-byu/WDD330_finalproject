@@ -349,3 +349,32 @@ footer {
   font-size: var(--small-font);
   padding: 1em;
 }
+
+/* Nav links  */
+
+/* .primarynavbar */ 
+nav {
+  color: aqua;
+  
+}
+nav ul {
+  list-style-type: none;
+  background-color: var(--primaryblocks-color);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li a {
+  font-size: 1rem; 
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem; 
+  display: block;
+  color: var(--infoblocks-color);
+}
+
+nav li a:hover {
+  background-color: var(--mbfbackground-color);
+  color: var(--primarytxt-color);
+}

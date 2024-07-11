@@ -63,6 +63,10 @@ export async function loadHeaderFooter() {
   const footerTemplate = await loadTemplate("../partials/footer.html");
   const footerElement = document.querySelector("#main-footer");
 
+  const navTemplate = await loadTemplate("../partials/nav.html");
+  const navElement = document.querySelector("#main-nav");
+
   renderWithTemplate(headerTemplate, headerElement);
   renderWithTemplate(footerTemplate, footerElement);
+  renderWithTemplate(navTemplate, navElement);
 }
