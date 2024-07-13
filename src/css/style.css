@@ -1,12 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Merinda:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
 :root {
-  --font-body: Arial, Helvetica, sans-serif;
-  --font-headline: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  --font-body: Raleway, sans-serif;
+  --font-headline: Merinda, serif;
   /* colors */
-  --primary-color: #f0a868;
-  --secondary-color: #525b0f;
-  --tertiary-color: #a4b8c4;
-  --light-grey: #d0d0d0;
-  --dark-grey: #303030;
+  /* --primary-color: #2674b5;
+  --secondary-color: #d474e7;
+  --tertiary-color: #223259;
+  --yellow: #ffca07;
+  --primary-lighter: #7198b8; */
+  --primary-color: #65176E;
+  --secondary-color: #A4161A;
+  --tertiary-color: #1B1725;
+  --light: #FAFAEF;
 
   /* sizes */
   --font-base: 18px;
@@ -15,13 +21,52 @@
 }
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 body {
   margin: 0;
   font-family: var(--font-body);
   font-size: var(--font-base);
-  color: var(--dark-grey);
+  color: var(--tertiary-color);
 }
+
+#content {
+  padding: 2em;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+  text-align: center;
+  font-family: var(--font-headline);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a,
+li {
+  font-family: var(--font-body);
+  text-decoration: none;
+  color: var(--tertiary-color);
+  cursor: pointer;
+  font-weight: bold;
+  list-style-type: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -47,35 +92,7 @@ header {
   text-decoration: none;
   color: var(--font-body);
 }
-.hero {
-  position: relative;
-}
-.hero .logo {
-  position: absolute;
-  left: calc(50% - 60px);
-  bottom: -10px;
-  background-color: white;
-}
-.logo--square {
-  font-size: var(--small-font);
-  width: 110px;
-  height: 80px;
 
-  flex-direction: column;
-  align-items: flex-end;
-  box-shadow: 1px 1px 4px var(--light-grey);
-  justify-content: center;
-  align-items: center;
-  line-height: 1;
-}
-.logo--square img {
-  width: 90px;
-  height: 90px;
-  margin-top: -1.3em;
-}
-.logo--square > div {
-  margin-top: -1.7em;
-}
 /* utility classes */
 .highlight {
   color: var(--tertiary-color);
@@ -84,18 +101,24 @@ header {
 button {
   padding: 0.5em 2em;
   background-color: var(--secondary-color);
-  color: white;
+  color: var(--tertiary-color);
   margin: auto;
   display: block;
   border: 0;
   font-size: var(--large-font);
   cursor: pointer;
 }
+
 button:hover {
-  background-color: rgb(39, 39, 204);
+  background-color: var(--light);
 }
+
 .divider {
-  border-bottom: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--tertiary-color);
+}
+
+.divider li {
+  padding: 0;
 }
 /* End utility classes */
 
@@ -159,7 +182,7 @@ PB: Superscript Trello Card, W3
   font-size: 60%;
   text-align: center;
   font-weight: bold;
-  color: var(--dark-grey);
+  color: var(--tertiary-color);
   border-radius: 70%;
   line-height: 1.3em;
 }
@@ -185,14 +208,14 @@ PB: Superscript Trello Card, W3
 }
 .product-list a {
   text-decoration: none;
-  color: var(--dark-grey);
+  color: var(--tertiary-color);
 }
 /* Styles for product lists */
 .product-card {
   flex: 1 1 45%;
   margin: 0.25em;
   padding: 0.5em;
-  border: 1px solid var(--light-grey);
+  border: 1px solid var(--light);
   max-width: 250px;
 }
 .product-card h2,
@@ -265,7 +288,7 @@ PB: Superscript Trello Card, W3
   flex-direction: row;
   justify-content: space-evenly; /* Evenly spaces items horizontally */
   padding: 5px; /* Optional: Adds some padding for better spacing */
-  border: 1px solid var(--light-grey);
+  border: 1px solid var(--tertiary-color);
 }
 .cart-card__quantity {
   grid-row: 1/2;
@@ -331,50 +354,143 @@ PB: Superscript Trello Card, W3
   background-color: blue;
 }
 
-@media screen and (min-width: 500px) {
-  body {
-    max-width: 1080px;
-    margin: auto;
-  }
-  .mission {
-    font-size: 1.2em;
-  }
-  .cart-card {
-    font-size: inherit;
-    grid-template-columns: 150px auto 15% 15%;
-  }
+/* Nav links  */
+/* .primarynavbar */
+.nav {
+  color: var(--tertiary-color);
+}
+
+.nav ul {
+  list-style-type: none;
+  background-color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-weight: bold;
+  font-family: var(--font-headline);
+  text-align: center;
+}
+
+.nav li {
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.nav a {
+  display: block;
+  color: var(--light);
+  text-decoration: none;
+}
+
+.types {
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--secondary-color);
+  text-align: center;
+  font-family: var(--font-body);
+  padding: 8px;
+  font-weight: bold;
+  display: block;
 }
 
 footer {
   font-size: var(--small-font);
   padding: 1em;
+  width: 100%;
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--light);
+  font-family: var(--font-headline);
+  font-weight: bold;
 }
 
-/* Nav links  */
-
-/* .primarynavbar */ 
-nav {
-  color: aqua;
-  
-}
-nav ul {
+.pokemon-types-list,
+.type-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
   list-style-type: none;
-  background-color: var(--primaryblocks-color);
+  padding: 0;
+}
+
+/* pokemon cards on home page*/
+.main-content {
+  padding: 0.5em;
+  color: var(--secondary-color);
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+}
+
+.pokemon-types-list a,
+.type-list a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.main-content ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  align-items: center;
 }
 
-nav li a {
-  font-size: 1rem; 
+.main-content li {
+  padding: 0.25em;
+  margin-bottom: 10px;
   text-align: center;
-  text-decoration: none;
-  padding: 0.5rem 1rem; 
-  display: block;
-  color: var(--infoblocks-color);
 }
 
-nav li a:hover {
-  background-color: var(--mbfbackground-color);
-  color: var(--primarytxt-color);
+.main-content img {
+  max-width: 125px;
+  max-height: auto;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 650px) {
+  body {
+    max-width: 1080px;
+    margin: auto;
+  }
+
+  .mission {
+    font-size: 1.2em;
+  }
+
+  .cart-card {
+    font-size: inherit;
+    grid-template-columns: 150px auto 15% 15%;
+  }
+
+  .nav {
+    flex-flow: row wrap;
+    padding: 0;
+  }
+
+  .nav li {
+    float: left;
+    padding: 10px;
+  }
+
+  .pokeTypes {
+    flex-flow: row wrap;
+  }
+
+  .types li {
+    float: left;
+    padding: 15px;
+  }
+
+  .main-content ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    grid-gap: 15px;
+  }
 }
