@@ -99,6 +99,10 @@ export async function typesListNLink(types) {
 // Add list on HOME "src/index.html" 
 export async function displayTypes() {
   try {
+    // Show the loading message
+    const loadingMessage = document.getElementById("loading-message");
+    loadingMessage.style.display = "block";
+
     const types = await fetchPokemonTypes();
     const typesContainer = document.getElementById("pokemon-types");
     const typesList = await typesListNLink(types);
@@ -113,9 +117,17 @@ export async function displayTypes() {
         window.location.href = `/pokemonByType/index.html?category=${selectedType}`;
       });
     });
+
+    // Hide the loading message
+    loadingMessage.style.display = "none";
+
+    // Append the types list to the container
     typesContainer.appendChild(typesList);
   } catch (error) {
     console.error("Error displaying Pokémon types:", error);
+    // Hide the loading message if an error occurs
+    const loadingMessage = document.getElementById("loading-message");
+    loadingMessage.style.display = "none";
   }
 }
 
