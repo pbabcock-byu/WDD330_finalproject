@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peter Babcock Final Project | Home</title>
+    <title>Peter Babcock Final Project | Card List</title>
     <link rel="icon" type="image/png" href="/images/pm_logo.jpg" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
@@ -12,21 +12,24 @@
       <header class="divider" id="main-header"></header>
       <nav id="main-nav"></nav>
 
-
-      
       <main class="divider">
-
         <div class="main-content">
-          <h2 class="pokemonCategory" id="pokemonCategory">/h2>
-          <div class="pokemon-by-type" id="pokemon-by-type">
-            <ul id="type-list"></ul>
+          <h2>Pokémon Cards for Type:</h2>
+          <h2 class="pokemonCategory" id="pokemonCategory"></h2>
+          <br />
+            <!-- Loading message -->
+            <div id="loading-message">Loading Pokémon types...</div>
+            <div class="pokemon-by-type" id="pokemon-by-type">
+                <ul id="type-list"></ul>
           </div>
         </div>
       </main>
 
       <footer id="main-footer"></footer>
     </div>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/displayPokemon.mjs"></script>
+    <script type="module" src="../js/pokemonTypes.js"></script>
   </body>
-  <script type="module" src="../js/main.js"></script>
-  <script type="module" src="../js/displayPokemon.mjs"></script>
 </html>
+

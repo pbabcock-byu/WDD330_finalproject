@@ -9,10 +9,10 @@
   --tertiary-color: #223259;
   --yellow: #ffca07;
   --primary-lighter: #7198b8; */
-  --primary-color: #65176E;
-  --secondary-color: #A4161A;
-  --tertiary-color: #1B1725;
-  --light: #FAFAEF;
+  --primary-color: #65176e;
+  --secondary-color: #a4161a;
+  --tertiary-color: #1b1725;
+  --light: #fafaef;
 
   /* sizes */
   --font-base: 18px;
@@ -72,25 +72,25 @@ img {
 }
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 10px;
 }
+
 .logo {
-  line-height: 60px;
-  width: 245px;
+  /* line-height: 60px; */
+  /* width: 245px; */
+  /* max-height: 60px; */
   overflow: hidden;
   display: flex;
-  font-size: 30px;
-  text-align: right;
-  font-family: var(--font-headline);
 }
 .logo img {
-  width: 60px;
-  height: 60px;
+  max-width: 100%;
+  max-height: 60px;
+  margin-bottom: 2px;
+  float: left;
 }
 .logo a {
   text-decoration: none;
-  color: var(--font-body);
 }
 
 /* utility classes */
@@ -176,13 +176,13 @@ PB: Superscript Trello Card, W3
   content: attr(cartItemCount);
   background: var(--primary-color);
   padding: 0 5px;
-  right: 0px;
-  top: 15px;
+  right: -5px;
+  top: 35px;
   position: absolute;
   font-size: 60%;
   text-align: center;
   font-weight: bold;
-  color: var(--tertiary-color);
+  color: var(--light);
   border-radius: 70%;
   line-height: 1.3em;
 }

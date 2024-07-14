@@ -14,8 +14,15 @@ async function displayPokemonByType(type) {
     typeName.textContent = type;
     const pokemonList = await allPokemonByType(type);
     const pokemonByTypeContainer = document.getElementById("type-list");
+    console.log(`typeCont: ${pokemonByTypeContainer}`);
     const pokemonByTypeList = document.createElement("ul");
     pokemonByTypeList.id = "list";
+
+    //   if (pokemonByTypeContainer) {
+    //     pokemonByTypeContainer.appendChild(pokemonByTypeList);
+    // } else {
+    //     console.error("Element 'type-list' not found!");
+    // }
 
     pokemonList.forEach((pokemon) => {
       const pokemonItem = document.createElement("li");
@@ -34,7 +41,9 @@ async function displayPokemonByType(type) {
       pokemonItem.appendChild(name);
 
       pokemonByTypeList.appendChild(pokemonItem);
+      //console.log(pokemonByTypeList)
     });
+    //console.log(pokemonByTypeList);
     pokemonByTypeContainer.appendChild(pokemonByTypeList);
   } catch (error) {
     console.error(`Error displaying Pokémon type ${type}:`, error);

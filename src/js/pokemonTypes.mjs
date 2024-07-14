@@ -18,7 +18,7 @@ export async function fetchPokemonTypes() {
 async function typeImage(type) {
   try {
     const pokemonImageMap = {
-      Colorless: "Altaria",
+      Colorless: "Arceus",
       Darkness: "Umbreon",
       Dragon: "Charizard",
       Fairy: "Sylveon",
@@ -72,7 +72,7 @@ export async function typesListNLink(types) {
   for (const { type, img } of typeImages) {
     const typeItem = document.createElement("li");
     // add the class "fade" to each li element
-    typeItem.classList.add("fade");
+    typeItem.classList.add("pCard");
     // Create a link for each type by passing in the type
     const typeLink = document.createElement("a");
     typeLink.textContent = type;
@@ -91,12 +91,11 @@ export async function typesListNLink(types) {
 
     // Add the type item to card-types
     typesList.appendChild(typeItem).classList.add("card-type");
-
   }
   return typesList;
 }
 
-// Add list on HOME "src/index.html" 
+// Add list on src\pokemonTypes\index.html (nav: Pokémon Types)
 export async function displayTypes() {
   try {
     // Show the loading message
@@ -115,6 +114,7 @@ export async function displayTypes() {
 
         // Go to pokemonByType/index.html and display all associated pokemon of that type
         window.location.href = `/pokemonByType/index.html?category=${selectedType}`;
+        console.log(`Selected type: ${selectedType}`);
       });
     });
 
@@ -144,3 +144,4 @@ export async function allPokemonByType(type) {
     throw error;
   }
 }
+
