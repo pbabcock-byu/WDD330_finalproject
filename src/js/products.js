@@ -40,7 +40,7 @@ function displayProducts(products) {
   }
   
   // Fetch product data from JSON file (replace with actual fetch logic)
-  const productDataPromise = fetch("../public/json/pm_items_forsales.json");
+  const productDataPromise = fetch("/public/json/pm_items_forsales.json");
   
   productDataPromise
     .then((response) => response.json())
