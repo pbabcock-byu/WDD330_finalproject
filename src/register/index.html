@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peter Babcock Final Project | Register</title>
+    <link rel="icon" type="image/png" href="/images/pm_logo.jpg" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div id="content">
+      <header class="divider" id="main-header"></header>
+      <nav id="main-nav"></nav>
+
+      <main class="divider">
+        <p class="instruct">
+          All fields are required to register as a Pokémon trainer.
+        </p>
+        <div class="main-column">
+          <div class="col-3 col-s-12">
+            <div class="main-right">
+              <div class="form-contain">
+                <form class="registerUser">
+                  <div class="form-row">
+                    <div class="form-col-25">
+                      <label for="userFirstName">First Name:</label>
+                    </div>
+                    <div class="form-col-75">
+                      <input
+                        name="userFirstName"
+                        id="userFirstName"
+                        type="text"
+                        required
+                        autofocus
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-col-25">
+                      <label for="userLastName">Last Name:</label>
+                    </div>
+                    <div class="form-col-75">
+                      <input
+                        name="userLastName"
+                        id="userLastName"
+                        type="text"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-col-25">
+                      <label for="userEmail">Email Address:</label>
+                    </div>
+                    <div class="form-col-75">
+                      <input
+                        name="userEmail"
+                        id="userEmail"
+                        type="email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-col-25"></div>
+                    <div class="form-col-75">
+                      <span class="instructions"
+                        >Passwords must be at least 8 characters and contain at
+                        least 1 number, 1 capital, and 1 special character</span
+                      >
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-col-25">
+                      <label for="userPassword">Password:</label>
+                    </div>
+                    <div class="form-col-75">
+                      <input
+                        name="userPassword"
+                        id="userPassword"
+                        type="password"
+                        pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <button
+                      type="submit"
+                      class="button"
+                      name="submit"
+                      id="regbtn"
+                      value="Register"
+                    >
+                      Register
+                    </button>
+                    <!-- Add the action name & value pair -->
+                    <!-- <input type="hidden" name="action" value="register-user"> -->
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer id="main-footer"></footer>
+    </div>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/auth.mjs"></script>
+  </body>
+</html>

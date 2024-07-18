@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peter Babcock Final Project | Login</title>
+    <link rel="icon" type="image/png" href="/images/pm_logo.jpg" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div id="content">
+      <header class="divider" id="main-header"></header>
+      <nav id="main-nav"></nav>
+      <main class="divider">
+        <div class="main-column">
+          <div class="col-3 col-s-12">
+            <div class="main-right">
+              <div class="form-contain" id="form-contain">
+                <form class="loginForm" id="loginForm">
+                  <div class="form-row">
+                    <div class="form-col-25">
+                      <label for="userName">User Name:</label>
+                    </div>
+                    <div class="form-col-75">
+                      <input
+                        name="userName"
+                        id="userName"
+                        type="text"
+                        placeholder="Enter your user name"
+                        autocomplete="name"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <br />
+                  <div class="form-row">
+                    <div class="form-col-25"></div>
+                    <div class="form-col-75">
+                      <span class="instructions">
+                        Passwords must be at least 8 characters and contain at
+                        least 1 number, 1 capital, and 1 special character</span
+                      >
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-col-25">
+                      <label for="userPassword">Password:</label>
+                    </div>
+                    <div class="form-col-75">
+                      <input
+                        name="userPassword"
+                        id="userPassword"
+                        type="password"
+                        placeholder="Enter your password"
+                        pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <button
+                      type="submit"
+                      class="button"
+                      name="submit"
+                      id="logbtn"
+                      value="Login"
+                      onClick="validateLogin()"
+                    >
+                      Login
+                    </button>
+                    <!-- Add the action name & value pair -->
+                    <!-- <input type="hidden" name="action" value="login-user"> -->
+                    <div class="message" id="message">
+                      <p>You are logged in as <span id="user"></span></p>
+                      <br />
+                      <button class="button" id="logout">
+                        <a href="../index.html">Logout</a>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <br />
+              <br /><br />
+              <div class="reg-now">
+                <p class="reg-now">
+                  Don't have a trainer account yet?
+                  <br /><br />
+                  <button class="button" id="register">
+                    <a href="../register/index.html">Register Now!</a>
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer id="main-footer"></footer>
+    </div>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/auth.mjs"></script>
+  </body>
+</html>

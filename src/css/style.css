@@ -13,6 +13,7 @@
   --secondary-color: #a4161a;
   --tertiary-color: #1b1725;
   --light: #fafaef;
+  --error: #2674b5;
 
   /* sizes */
   --font-base: 18px;
@@ -196,63 +197,111 @@ PB: Superscript Trello Card, W3
   max-width: 600px;
   margin: auto;
 }
-.products {
-  padding: 0.5em;
-}
-.product-list {
+
+/* CSS for store products for sale */
+.product-container {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  list-style-type: none;
-  padding: 0;
-}
-.product-list a {
-  text-decoration: none;
-  color: var(--tertiary-color);
-}
-/* Styles for product lists */
-.product-card {
-  flex: 1 1 45%;
-  margin: 0.25em;
-  padding: 0.5em;
-  border: 1px solid var(--light);
-  max-width: 250px;
-}
-.product-card h2,
-.product-card h3,
-.product-card p {
-  margin: 0.5em 0;
-}
-/*Style for categories*/
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 55px;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-}
-.product-grid li {
-  text-align: center;
-}
-
-.card__brand {
-  font-size: var(--small-font);
-}
-
-.card__name {
-  font-size: 1em;
-}
-/* End product list card */
-
-.product-detail {
-  padding: 1em;
-  max-width: 500px;
-  margin: auto;
-}
-
-.product-detail img {
+  flex-flow: wrap;
+  margin: 0 auto;
+  padding: 10px;
   width: 100%;
+}
+
+.product-card {
+  margin: 10px;
+  border: var(--secondary-color);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+}
+
+.product-card img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-info {
+  margin-top: 10px;
+}
+
+.product-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-description {
+  font-size: 0.8em;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-weight: bold;
+  color: var(--tertiary-color);
+  margin-bottom: 5px;
+  padding: 20px;
+}
+
+.product-rating {
+  font-size: 0.8em;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+/* End of CSS for store products for sale */
+
+/* LOGIN AND REGISTRATION PAGES */
+form {
+  margin: 1em auto;
+  padding: 1em;
+  text-align: left;
+  background-color: var(--light);
+  border-radius: var(--border-radius);
+  text-align: center;
+  border: 2px solid var(--accent-yellow);
+  box-shadow:
+    0 0 5px rgba(0, 0, 0, 0.1),
+    0 2px 3px var(--error);
+  font-weight: bold;
+}
+
+.form-col-75,
+.form-col-25 {
+  width: 100%;
+  margin-top: 0;
+}
+
+/* Clear floats after the columns */
+.form-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input:required:invalid,
+input:focus:invalid {
+  color: var(--error);
+  font-weight: bold;
+  border-color: var(--error);
+}
+
+/* spans with directions for passwords and other criteria*/
+.instructions {
+  color: var(--primary-color);
+  list-style: none;
+  font-size: 0.65rem;
+  /*0.65rem looks better, but for accessibility, needs to be at least 12px*/
+  text-transform: uppercase;
+}
+
+.message {
+  display: none;
+}
+
+.instruct {
+  padding-top: 1.25em;
+  font-weight: bold;
 }
 
 /* Start cart list card styles */
@@ -330,7 +379,6 @@ PB: Superscript Trello Card, W3
 }
 
 /* Style to control cart total*/
-
 .hide {
   display: none;
 }
@@ -360,7 +408,7 @@ PB: Superscript Trello Card, W3
   color: var(--tertiary-color);
 }
 
-.nav ul {
+.nav ul, .button {
   list-style-type: none;
   background-color: var(--secondary-color);
   margin: 0;
@@ -371,16 +419,21 @@ PB: Superscript Trello Card, W3
   text-align: center;
 }
 
-.nav li {
+.nav li, .button {
   font-size: 1.2rem;
   text-decoration: none;
   padding: 8px;
 }
 
-.nav a {
+.nav a, .button {
   display: block;
   color: var(--light);
   text-decoration: none;
+}
+
+.nav a:hover,
+.button a:hover {
+  color: var(--error);
 }
 
 .types {
@@ -492,5 +545,89 @@ footer {
     padding: 0;
     align-items: center;
     grid-gap: 15px;
+  }
+
+  /* https://www.w3schools.com/css/css_rwd_intro.asp */
+  .col-s-1 {
+    width: 8.33%;
+  }
+
+  .col-s-2 {
+    width: 16.66%;
+  }
+
+  .col-s-3 {
+    width: 25%;
+  }
+
+  .col-s-4 {
+    width: 33.33%;
+  }
+
+  .col-s-5 {
+    width: 41.66%;
+  }
+
+  .col-s-6 {
+    width: 50%;
+  }
+
+  .col-s-7 {
+    width: 58.33%;
+  }
+
+  .col-s-8 {
+    width: 66.66%;
+  }
+
+  .col-s-9 {
+    width: 75%;
+  }
+
+  .col-s-10 {
+    width: 83.33%;
+  }
+
+  .col-s-11 {
+    width: 91.66%;
+  }
+
+  .col-s-12 {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid var(--tertiary-color);
+    resize: vertical;
+    color: black;
+  }
+
+  label {
+    padding: 0.5em;
+    display: inline-block;
+  }
+
+  .form-col-25 {
+    float: left;
+    width: 25%;
+    text-align: right;
+  }
+
+  .form-col-75 {
+    float: left;
+    width: 75%;
+  }
+
+  /* Clear floats after the columns */
+  .form-row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }

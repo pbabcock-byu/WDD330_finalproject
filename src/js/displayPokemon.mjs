@@ -14,7 +14,7 @@ async function displayPokemonByType(type) {
     typeName.textContent = type;
     const pokemonList = await allPokemonByType(type);
     const pokemonByTypeContainer = document.getElementById("type-list");
-    console.log(`typeCont: ${pokemonByTypeContainer}`);
+    //console.log(`typeCont: ${pokemonByTypeContainer}`);
     const pokemonByTypeList = document.createElement("ul");
     pokemonByTypeList.id = "list";
 

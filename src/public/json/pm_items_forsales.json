@@ -1,113 +1,114 @@
 [
-	{
-        "productname": "Card Binder For Pokemon Card",
-        "id": "E00245",
-        "description": "Card Binder For Pokemon Card 4-Pocket Sleeves with 440 Cards Holder,Game Collection Binder Card Holder Of Fit for TCGcard album,game card Yugioh Trading Sports Cards (Red).",
-        "about": {
-            "feature1": "The 4-pocket Pokemon card binder features a unique and colorful design, making it stand out among other binders. It's perfect for game card lovers who appreciate originality and style.",
-            "feature2": "Durable and Waterproof: Made from durable and waterproof PU material, this binder ensures long-lasting protection for your beloved Pokemon cards. It's easy to clean, adding to its practicality and convenience.",
-            "feature3": "Domineering and Lovely Style: The binder highlights a domineering yet lovely style, appealing to both children and adults. It's a favorite gift for children who are enthusiastic about Pokemon card collections."
-            },
-        "price": 14.99,
-	"rating": 4.7,
-	"images": "..//images/CardBinder.jpg"
-	},
-
-	{
-        "productname": "Pikachu Black Digital LED Quartz Wrist-Watch",
-        "id": "pmwatch",
-        "description": "Accutime Kids Pokémon Pikachu Black Digital LED Quartz Wrist-Watch with Camera, Alarm, Timer, Stopwatch, and Games for Boys, Girls, and Toddlers",
-        "about": {
-            "feature1": "Interactive Pokémon Experience: This Pokémon Pikachu digital kids watch offers a vibrant LED screen featuring your favorite Pokémon characters. Perfect for any young Pokémon fan, this watch brings the magic of Pokémon to their wrist.",
-            "feature2": "Multifunctional Features: Includes an alarm, timer, stopwatch, and voice recorder. Plus, it comes with a selfie photo and video camera, providing hours of fun and entertainment for your child.",
-            "feature3": "Educational and Fun: Encourages learning with features like a calculator and step/calorie counter. The various clock faces and wallpapers allow your child to customize their watch and engage in interactive play."
-            },
-        "price": 34.94,
-	"rating": 4.5,
-	"images": "../images/pm_wristwatch_pikachu.jpg"
-	},
-
-	{
-        "productname": "25 Rare Pokemon Cards",
-        "id": "pmcards",
-        "description": "25 Rare Pokemon Cards with 100 HP or Higher (Assorted Lot with No Duplicates) (Original Version)",
-        "about": {
-            "feature1": "ideal for casual play non-block tournament formats",
-            "feature2": "Each piece a rare Pokemon-type card",
-            "feature3": "Country Origin:USA"
-            },
-        "price": 5.25,
-	"rating": 4.5,
-	"images": "../images/pm_cards.jpg"
-	},
-
-	{
-        "productname": "Colgate Kids Battery Powered Toothbrush",
-        "id": "pmtoothbrush",
-        "description": "Colgate Kids Battery Powered Toothbrush, Kids Battery Toothbrush with Included AA Battery, Extra Soft Bristles, Flat-Laying Handle to Prevent Rolling, Pokemon Toothbrush, 1 Pack (Style May Vary)",
-        "about": {
-            "feature1": "Includes one (1) Colgate Kids Battery Toothbrush with included AA battery, Pokemon Battery Toothbrush for Kids",
-            "feature2": "This Colgate Kids Battery Powered Toothbrush is made for children ages 3 and up",
-            "feature3": "A flat-laying handle makes it easy to apply toothpaste to this kids vibrating toothbrush without the brush rolling over or away"
-            },
-        "price": 4.98,
-	"rating": 4.7,
-	"images": "../images/pm_toothbrush.jpg"
-	},
-
-	{
-        "productname": "Pokemon Board Game",
-        "id": "pmboardgame",
-        "description": "Pokemon Battle Academy Board Game",
-        "about": {
-            "feature1": "3 complete Pokémon TCG decks (60 cards each)",
-            "feature2": "Each deck includes a powerful special Pokémon: Cinderace V, Pikachu V, or Eevee V",
-            "feature3": "Eevee deck includes 2 copies of an all-new promo card featuring Galarian Obstagoon"
-            },
-        "price": 12.99,
-	"rating": 4.7,
-	"images": "../images/pm_boardgame.jpg"
-	},
-
-	{
-        "productname": "Make Your Own Night Light",
-        "id": "pmnightlight",
-        "description": "Make Your Own Night Light Kit for Kids - Light-Up Po-ke-m-on Toys Easter Egg Terrarium Craft Kit - Arts & Crafts Activities Kit - Bedroom Decoration Christmas Gifts for 4 5 6 7 8 Year Old Kids- Yellow",
-        "about": {
-            "feature1": "[Fantasy Terrarium Night Light]Unleash your child's imagination and creativity with their own personalized, magical garden . It is a miniature faux easter basket stuffers within a container that simulates a natural environment. So, let your child discover the beauty of nature and the magic of by creating their own beautiful terrarium easter eggs with this all-inclusive kit. This glass container is like a pokeball！",
-            "feature2": "[Let it Glow] Our new, redesigned and exclusive lighting system transforms the terrarium pokeball into a magical night light. We offer 2 LED rainbow string light in the pokeball night light and change it into a light-up pokeball easter egg fillers. At night, just hit the small switch to turn on the light and watch how your terrarium turns into a gorgeous illuminated fantasy garden. It's a great easter gifts for toddler",
-            "feature3": "[Kit includes] Terrarium jar, 2 x rainbow string light, clear and easy step-by-step instruction booklet, toys, variety of colored and transparent crystals, pebbles, moss, faux succulents, mushroom miniatures. The ultimate arts and crafts project for kids."
-            },
-        "price": 16.99,
-	"rating": 4.2,
-	"images": "../images/pm_nightlight.jpg"
-	},
-
-	{
-        "productname": "Youth Cap",
-        "id": "pmcap",
-        "description": "Bioworld Pokemon Characters AOP Youth Light Blue Snapback Cap",
-        "about": {
-            "feature1": "CUSTOM DESIGN: All over print of Charmander, Bulbasaur, Pikachu, Squirtle, Jigglypuff, and Eevee decorates this snapback cap while a rubber patch image of Pikachu appears in the center. Pokemon fans will love this fun design.",
-            "feature2": "ADJUSTABLE HAT: This Pokemon hat comes with a snapback feature that lets you adjust the cap for size and comfort, so Pokemon trainers of all shapes and sizes can celebrate their favorite characters.",
-            "feature3": "OFFICIALLY LICENSED: This Pokemon snapback cap is officially licensed, making it a great gift for fans of the video game series. Show some love for your favorite characters with this Pokemon hat."
-            },
-        "price": 14.99,
-	"rating": 4.7,
-	"images": "../images/pm_cap.jpg"
-	},
-    
     {
-        "productname": "Pokemon Bluetooth Headphones",
-        "id": "pmheadphones",
-        "description": "eKids Pokemon Kids Bluetooth Headphones, Wireless Headphones with Microphone Includes Aux Cord, Volume Reduced Kids Foldable Headphones for School, Home, or Travel,Yellow",
-        "about": {
-            "feature1": "Bluetooth Headphones for Kids: Connect any device including smartphones, tablets, and computers to wirelessly stream high quality, kid-friendly stereo sound for entertainment and/or education. Listen to music, watch movies, TV, and YouTube, or use for remote learning, virtual classes, audiobooks, and more.",
-            "feature2": "Custom Fit: Comfortable headphones feature an adjustable headband and soft ear cushions to provide a custom fit when using these foldable headphones for school, gaming, home, and more. Portable and rechargeable, these wireless headphones are ideal for travel, too.",
-            "feature3": "Wired Headphones Option: Use your headphones two different ways! Up to 24* hours of continuous Bluetooth playtime when connected to a device. Use the included 3.5mm audio cable to listen to music/audio when Bluetooth is not available, or when the battery needs to be charged."
-            },
-        "price": 29.99,
-	"rating": 4.5,
-	"images": "../images/pm_headphones.jpg"
-	}
-]
+      "productname": "Card Binder For Pokemon Cards",
+      "id": "E00245",
+      "description": "Card Binder For Pokemon Card 4-Pocket Sleeves with 440 Cards Holder,Game Collection Binder Card Holder Of Fit for TCGcard album,game card Yugioh Trading Sports Cards (Red).",
+      "about": {
+        "feature1": "The 4-pocket Pokemon card binder features a unique and colorful design, making it stand out among other binders. It's perfect for game card lovers who appreciate originality and style.",
+        "feature2": "Durable and Waterproof: Made from durable and waterproof PU material, this binder ensures long-lasting protection for your beloved Pokemon cards. It's easy to clean, adding to its practicality and convenience.",
+        "feature3": "Domineering and Lovely Style: The binder highlights a domineering yet lovely style, appealing to both children and adults. It's a favorite gift for children who are enthusiastic about Pokemon card collections."
+      },
+      "price": 14.99,
+      "rating": 4.7,
+      "images": "../images/CardBinder.jpg"
+    },
+  
+    {
+      "productname": "Pikachu Black Digital LED Quartz Wrist-Watch",
+      "id": "pmwatch",
+      "description": "Accutime Kids Pokémon Pikachu Black Digital LED Quartz Wrist-Watch with Camera, Alarm, Timer, Stopwatch, and Games for Boys, Girls, and Toddlers",
+      "about": {
+        "feature1": "Interactive Pokémon Experience: This Pokémon Pikachu digital kids watch offers a vibrant LED screen featuring your favorite Pokémon characters. Perfect for any young Pokémon fan, this watch brings the magic of Pokémon to their wrist.",
+        "feature2": "Multifunctional Features: Includes an alarm, timer, stopwatch, and voice recorder. Plus, it comes with a selfie photo and video camera, providing hours of fun and entertainment for your child.",
+        "feature3": "Educational and Fun: Encourages learning with features like a calculator and step/calorie counter. The various clock faces and wallpapers allow your child to customize their watch and engage in interactive play."
+      },
+      "price": 34.94,
+      "rating": 4.5,
+      "images": "../images/pm_wristwatch_pikachu.jpg"
+    },
+  
+    {
+      "productname": "25 Rare Pokemon Cards",
+      "id": "pmcards",
+      "description": "25 Rare Pokemon Cards with 100 HP or Higher (Assorted Lot with No Duplicates) (Original Version)",
+      "about": {
+        "feature1": "ideal for casual play non-block tournament formats",
+        "feature2": "Each piece a rare Pokemon-type card",
+        "feature3": "Country Origin:USA"
+      },
+      "price": 5.25,
+      "rating": 4.5,
+      "images": "../images/pm_cards.jpg"
+    },
+  
+    {
+      "productname": "Colgate Kids Battery Powered Toothbrush",
+      "id": "pmtoothbrush",
+      "description": "Colgate Kids Battery Powered Toothbrush, Kids Battery Toothbrush with Included AA Battery, Extra Soft Bristles, Flat-Laying Handle to Prevent Rolling, Pokemon Toothbrush, 1 Pack (Style May Vary)",
+      "about": {
+        "feature1": "Includes one (1) Colgate Kids Battery Toothbrush with included AA battery, Pokemon Battery Toothbrush for Kids",
+        "feature2": "This Colgate Kids Battery Powered Toothbrush is made for children ages 3 and up",
+        "feature3": "A flat-laying handle makes it easy to apply toothpaste to this kids vibrating toothbrush without the brush rolling over or away"
+      },
+      "price": 4.98,
+      "rating": 4.7,
+      "images": "../images/pm_toothbrush.jpg"
+    },
+  
+    {
+      "productname": "Pokemon Board Game",
+      "id": "pmboardgame",
+      "description": "Pokemon Battle Academy Board Game",
+      "about": {
+        "feature1": "3 complete Pokémon TCG decks (60 cards each)",
+        "feature2": "Each deck includes a powerful special Pokémon: Cinderace V, Pikachu V, or Eevee V",
+        "feature3": "Eevee deck includes 2 copies of an all-new promo card featuring Galarian Obstagoon"
+      },
+      "price": 12.99,
+      "rating": 4.7,
+      "images": "../images/pm_boardgame.jpg"
+    },
+  
+    {
+      "productname": "Make Your Own Night Light",
+      "id": "pmnightlight",
+      "description": "Make Your Own Night Light Kit for Kids - Light-Up Po-ke-m-on Toys Easter Egg Terrarium Craft Kit - Arts & Crafts Activities Kit - Bedroom Decoration Christmas Gifts for 4 5 6 7 8 Year Old Kids- Yellow",
+      "about": {
+        "feature1": "[Fantasy Terrarium Night Light]Unleash your child's imagination and creativity with their own personalized, magical garden . It is a miniature faux easter basket stuffers within a container that simulates a natural environment. So, let your child discover the beauty of nature and the magic of by creating their own beautiful terrarium easter eggs with this all-inclusive kit. This glass container is like a pokeball！",
+        "feature2": "[Let it Glow] Our new, redesigned and exclusive lighting system transforms the terrarium pokeball into a magical night light. We offer 2 LED rainbow string light in the pokeball night light and change it into a light-up pokeball easter egg fillers. At night, just hit the small switch to turn on the light and watch how your terrarium turns into a gorgeous illuminated fantasy garden. It's a great easter gifts for toddler",
+        "feature3": "[Kit includes] Terrarium jar, 2 x rainbow string light, clear and easy step-by-step instruction booklet, toys, variety of colored and transparent crystals, pebbles, moss, faux succulents, mushroom miniatures. The ultimate arts and crafts project for kids."
+      },
+      "price": 16.99,
+      "rating": 4.2,
+      "images": "../images/pm_nightlight.jpg"
+    },
+  
+    {
+      "productname": "Youth Cap",
+      "id": "pmcap",
+      "description": "Bioworld Pokemon Characters AOP Youth Light Blue Snapback Cap",
+      "about": {
+        "feature1": "CUSTOM DESIGN: All over print of Charmander, Bulbasaur, Pikachu, Squirtle, Jigglypuff, and Eevee decorates this snapback cap while a rubber patch image of Pikachu appears in the center. Pokemon fans will love this fun design.",
+        "feature2": "ADJUSTABLE HAT: This Pokemon hat comes with a snapback feature that lets you adjust the cap for size and comfort, so Pokemon trainers of all shapes and sizes can celebrate their favorite characters.",
+        "feature3": "OFFICIALLY LICENSED: This Pokemon snapback cap is officially licensed, making it a great gift for fans of the video game series. Show some love for your favorite characters with this Pokemon hat."
+      },
+      "price": 14.99,
+      "rating": 4.7,
+      "images": "../images/pm_cap.jpg"
+    },
+  
+    {
+      "productname": "Pokemon Bluetooth Headphones",
+      "id": "pmheadphones",
+      "description": "eKids Pokemon Kids Bluetooth Headphones, Wireless Headphones with Microphone Includes Aux Cord, Volume Reduced Kids Foldable Headphones for School, Home, or Travel,Yellow",
+      "about": {
+        "feature1": "Bluetooth Headphones for Kids: Connect any device including smartphones, tablets, and computers to wirelessly stream high quality, kid-friendly stereo sound for entertainment and/or education. Listen to music, watch movies, TV, and YouTube, or use for remote learning, virtual classes, audiobooks, and more.",
+        "feature2": "Custom Fit: Comfortable headphones feature an adjustable headband and soft ear cushions to provide a custom fit when using these foldable headphones for school, gaming, home, and more. Portable and rechargeable, these wireless headphones are ideal for travel, too.",
+        "feature3": "Wired Headphones Option: Use your headphones two different ways! Up to 24* hours of continuous Bluetooth playtime when connected to a device. Use the included 3.5mm audio cable to listen to music/audio when Bluetooth is not available, or when the battery needs to be charged."
+      },
+      "price": 29.99,
+      "rating": 4.5,
+      "images": "../images/pm_headphones.jpg"
+    }
+  ]
+  
