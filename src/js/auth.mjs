@@ -19,11 +19,17 @@ export function loginUser() {
     registerForm.addEventListener("submit", async (event) => {
       event.preventDefault();
       // Validate registration data
+      console.log("Before validation")
       const valid = await validateRegistration(event.target.elements);
       if (valid) {
+        console.log("After validation (valid)", valid)
         const firstName = document.getElementById("userFirstName").value;
         localStorage.setItem("userName", firstName); // store username in local storage
         updateGreeting(firstName); // update greeting message
+      }
+      else {
+        // Handle validation errors (display error messages)
+        console.error("Registration failed due to validation errors.");
       }
     });
   }
@@ -51,8 +57,17 @@ export function loginUser() {
     const lastName = elements.userLastName.value;
     const email = elements.userEmail.value;
     const password = elements.userPassword.value;
+    localStorage.setItem("test", "value");
+    localStorage.getItem("test");
+  
+    console.log(firstName);
+    console.log(lastName);
+  console.log(email);
+  console.log(password);
   
     let valid = true;
+    // store error messages
+    let errorMessage = ""; 
   
     // Check fields aren't empty
     if (
@@ -62,6 +77,8 @@ export function loginUser() {
       password.length === 0
     ) {
       valid = false;
+      errorMessage = "Please complete all fields.";
+      alert(errorMessage);
     } else {
       document.getElementById("form-contain").style.display = "none";
       document.getElementById("message").style.display = "inline-block";
@@ -70,7 +87,7 @@ export function loginUser() {
   }
   
   export function updateGreeting(username) {
-    const navElement = document.querySelector("[id='nav-p']");
-    navElement.textContent = `I choose you, ${username}!`;
+    const greetElement = document.querySelector("[id='greeting']");
+    greetElement.textContent = `I choose you, ${username}!`;
   }
   

@@ -16,6 +16,6 @@ loginForm.addEventListener("submit", (event) => {
 });
 
 export function updateGreeting(username) {
-  const greetingElement = document.getElementById("nav-p");
+  const greetingElement = document.getElementById("greeting");
   greetingElement.textContent = `I choose you, ${username}!`;
 }

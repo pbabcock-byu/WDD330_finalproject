@@ -2,6 +2,7 @@
 import pokemon from "pokemontcgsdk";
 
 import { loadHeaderFooter, getLocalStorage } from "./utils.mjs";
+import { updateGreeting } from "./auth.mjs";
 
 const apiKey = import.meta.env.VITE_API_KEY;
 
@@ -26,4 +27,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (cartItemCountElement != null) {
     cartItemCountElement.textContent = cartItemCount;
   }
+
+});
+
+
+/* Pokeball animation on home page */
+const pokeball = document.getElementById("Layer_1");
+
+pokeball.addEventListener('animationiteration', () => {
+  pokeball.style.transform = 'translateX(0px) translateY(-5px)'; // Reset to left edge with slight bounce
 });

@@ -15,6 +15,8 @@
   --light: #fafaef;
   --error: #2674b5;
 
+  --border-radius: 3px;
+
   /* sizes */
   --font-base: 18px;
   --small-font: 0.8em;
@@ -52,6 +54,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  margin-top: 20px;
 }
 
 h3 {
@@ -99,19 +102,25 @@ header {
   color: var(--tertiary-color);
 }
 
-button {
+button[type="submit"], .button {
   padding: 0.5em 2em;
   background-color: var(--secondary-color);
-  color: var(--tertiary-color);
+  color: var(--light);
   margin: auto;
   display: block;
   border: 0;
-  font-size: var(--large-font);
   cursor: pointer;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease-in-out;
 }
 
-button:hover {
-  background-color: var(--light);
+button[type="submit"]:hover {
+  background-color: var(--error);
+}
+
+.button, #register {
+  color: var(--light);
+  margin-bottom: 20px;
 }
 
 .divider {
@@ -136,6 +145,9 @@ button:hover {
 .cart:hover svg {
   fill: gray;
 }
+
+
+
 /*Title for Top Products*/
 .title {
   text-transform: capitalize;
@@ -251,7 +263,13 @@ PB: Superscript Trello Card, W3
 }
 /* End of CSS for store products for sale */
 
-/* LOGIN AND REGISTRATION PAGES */
+/* FORMS for LOGIN AND REGISTRATION PAGES */
+form,
+.form-group {
+  margin: 0;
+  padding: 0; /* Remove default padding as well (optional) */
+}
+
 form {
   margin: 1em auto;
   padding: 1em;
@@ -259,18 +277,34 @@ form {
   background-color: var(--light);
   border-radius: var(--border-radius);
   text-align: center;
-  border: 2px solid var(--accent-yellow);
+  border: 2px solid var(--primary-color);
   box-shadow:
     0 0 5px rgba(0, 0, 0, 0.1),
     0 2px 3px var(--error);
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.form-col-75,
-.form-col-25 {
-  width: 100%;
-  margin-top: 0;
+.form-group {
+  display: flex;
+  align-items: center;
 }
+
+label {
+  flex: 0 0 100px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  flex: 1;
+  padding: 5px;
+  border-radius: var(--border-radius);
+}
+
 
 /* Clear floats after the columns */
 .form-row:after {
@@ -288,20 +322,17 @@ input:focus:invalid {
 
 /* spans with directions for passwords and other criteria*/
 .instructions {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   list-style: none;
   font-size: 0.65rem;
   /*0.65rem looks better, but for accessibility, needs to be at least 12px*/
   text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
 }
 
 .message {
   display: none;
-}
-
-.instruct {
-  padding-top: 1.25em;
-  font-weight: bold;
 }
 
 /* Start cart list card styles */
@@ -406,33 +437,31 @@ input:focus:invalid {
 /* .primarynavbar */
 .nav {
   color: var(--tertiary-color);
+  font-family: var(--font-body);
 }
 
-.nav ul, .button {
+.nav ul {
   list-style-type: none;
   background-color: var(--secondary-color);
   margin: 0;
   padding: 0;
   overflow: hidden;
-  font-weight: bold;
-  font-family: var(--font-headline);
   text-align: center;
 }
 
-.nav li, .button {
+.nav li {
   font-size: 1.2rem;
   text-decoration: none;
   padding: 8px;
 }
 
-.nav a, .button {
+.nav a {
   display: block;
   color: var(--light);
   text-decoration: none;
 }
 
-.nav a:hover,
-.button a:hover {
+.nav a:hover{
   color: var(--error);
 }
 
@@ -503,6 +532,50 @@ footer {
   object-fit: cover;
 }
 
+/* User greeting and text animation */
+.greeting {
+  font-size: var(--large-font);
+  font-family: var(--font-body);
+  text-align: center;
+  padding: 1em;
+  font-weight: bold;
+  width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  animation: growshrink 2s ease-in-out 1 reverse;
+}
+@keyframes growshrink {
+  from {
+    font-size: 1em;
+  }
+  to {
+    font-size: 2.75em;
+  }
+}
+
+/* Pokeball animation on Home page */
+.pokeContainer {
+  justify-content: left;
+  align-items: center;
+  display: flex;
+}
+
+#Layer_1 {
+  animation: bouncy 1s infinite alternate; 
+  position: absolute;
+
+}
+@keyframes bouncy {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
+
+
 @media screen and (min-width: 650px) {
   body {
     max-width: 1080px;
@@ -547,87 +620,15 @@ footer {
     grid-gap: 15px;
   }
 
-  /* https://www.w3schools.com/css/css_rwd_intro.asp */
-  .col-s-1 {
-    width: 8.33%;
+  form {
+    width: 500px;
+    padding: 20px;
   }
 
-  .col-s-2 {
-    width: 16.66%;
+  .form-group {
+    /* Adjust for horizontal layout on larger screens */
+    flex-direction: row; /* Align elements horizontally */
+    margin-bottom: 10px; /* Add some space between groups */
   }
-
-  .col-s-3 {
-    width: 25%;
-  }
-
-  .col-s-4 {
-    width: 33.33%;
-  }
-
-  .col-s-5 {
-    width: 41.66%;
-  }
-
-  .col-s-6 {
-    width: 50%;
-  }
-
-  .col-s-7 {
-    width: 58.33%;
-  }
-
-  .col-s-8 {
-    width: 66.66%;
-  }
-
-  .col-s-9 {
-    width: 75%;
-  }
-
-  .col-s-10 {
-    width: 83.33%;
-  }
-
-  .col-s-11 {
-    width: 91.66%;
-  }
-
-  .col-s-12 {
-    width: 100%;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  select,
-  textarea {
-    width: 100%;
-    padding: 1em;
-    border: 1px solid var(--tertiary-color);
-    resize: vertical;
-    color: black;
-  }
-
-  label {
-    padding: 0.5em;
-    display: inline-block;
-  }
-
-  .form-col-25 {
-    float: left;
-    width: 25%;
-    text-align: right;
-  }
-
-  .form-col-75 {
-    float: left;
-    width: 75%;
-  }
-
-  /* Clear floats after the columns */
-  .form-row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  
 }
