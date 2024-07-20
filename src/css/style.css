@@ -305,6 +305,15 @@ input[type="password"] {
   border-radius: var(--border-radius);
 }
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  width: calc(100% + 35%); /* Increase width by 20px on focus */
+  padding: 7px; /* Increase padding on focus (optional) */
+  color: var(--primary-color);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
 
 /* Clear floats after the columns */
 .form-row:after {
@@ -496,7 +505,7 @@ footer {
   padding: 0;
 }
 
-/* pokemon cards on home page*/
+/* pokemon cards on types page*/
 .main-content {
   padding: 0.5em;
   color: var(--secondary-color);
