@@ -18,8 +18,11 @@ registerForm.addEventListener("submit", (event) => {
   }
 
   // Store username (first name) in local storage
-  localStorage.setItem("userName", firstName);
+  localStorage.setItem("firstName", firstName);
+  localStorage.setItem("lastName", lastName);
+  localStorage.setItem("email", email);
+  localStorage.setItem("password", password); //NOT hashed
 
   // Update greeting message
-  greetingElement.textContent = `Welcome, ${firstName}!`;
+  greetingElement.textContent = `Welcome, Trainer ${firstName} ${lastName}! Email: ${email}`;
 });
