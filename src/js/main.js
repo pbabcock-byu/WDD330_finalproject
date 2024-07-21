@@ -31,9 +31,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 
-/* Pokeball animation on home page */
+/* Pokeball animation on home page
 const pokeball = document.getElementById("Layer_1");
 
 pokeball.addEventListener('animationiteration', () => {
   pokeball.style.transform = 'translateX(0px) translateY(-5px)'; // Reset to left edge with slight bounce
-});
+}); */
